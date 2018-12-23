@@ -1,0 +1,115 @@
+﻿Welcome
+Welcome to the web site of Alexandre Ryjoukhine. I am a Java application developer. I deliver turnkey applications for various businesses and cover almost all aspects of development: application design,application development, business analysis, and project management. 
+
+I have broad technical skills:
+Java frameworks - (Struts, Spring, Hibernate etc.)
+J2EE Application servers – JBoss, WebSphere, Tomcat
+J2EE technologies - EJB, JMS
+Databases – Oracle, DB2, MySQL, MS SQL.
+Utilities – Ant, Log4j, JUnit, etc.
+I have learned to manage projects through the organization in big corporations which is often necessary to make things happen and to work with small business customers who do not have in-house expertise in the technology and depend on me to "do the right thing." During my carrier I have found that regardless the size of their operations my customers were always looking for cost and time effective solutions of their business challenges. They need a developer who can translate their business challenges into a useful application that fulfils their needs. My aim is to provide this service by using commonly recognized methodologies (e.g. Rational Unified Process), modern technologies and tools.
+Most of the IT projects require coordinated efforts of many people - team(s) of developers, project managers, business analysts, testers. I have used to work in this environment mostly in project lead and architectural roles to align on the requirements execution, manage developers and provide overall application design.
+
+
+
+Application Design
+Before writing the first line of code, it is essential that stakeholders agree on business requirements and have well defined idea on how their application should function. For complex systems it is usually an interactive process (i.e. one of the approach to deal with this complexity is to employ some Rational Unified Process recommendations). 
+
+I use the following approaches in an application design:
+Any application must serve a useful purpose which is immediately clear for customers.
+It must be user friendly with as little as possible initial training efforts for users.
+It should be based on proven design standards.
+It must be designed for a future growth: extensible and scalable.
+The design must be documented.
+The application should be unit and performance tested.
+Creation and maintenance costs must be minimal.
+A challenge of building the right system at a reasonable cost is always one of the biggest developer challenges. My experience shows that one of the best answers to this challenge is Unified Process with UML tool
+From architectural point of view any of the design should be based on clearly defined standards, multi-tier architecture (if applicable) and design patterns. It is very helpful to use Object Oriented methods to create class diagrams which are mapped as closely as possible to real business objects and processes. Classes implement Interfaces and relate to each other via Inheritance and Composition.
+There are very good commercial tools on the market to support the application design (e.g. PowerDesigner from Sybase) however with a certain amount creativity almost the same may be achieved with freely available tools. For example: Use NetBeans for UML diagrams (Class, Activity, Sequence etc.) and easy reverse engineering. In some projects I used NetBeans for UML/reverse engineering and Eclipse for the development (I like Eclipse based IDE the most) working on the same source code. 
+Use MS Access for a quick database prototyping - look at its Relationship view and Query designer.
+
+
+Project management
+For any project with more than 2 persons involved it may be quite useful to provide a formalized to a certain degree project management. It becomes a real necessity for a medium and big IT projects - different people, different skills, complex systems, and scares resources.
+All this would require a good task allocation, tracking, budget control, communication and reporting.
+I can allocate tasks for development and BA teams. Provide scheduling and resource allocation (e.g. in MS Project) 
+
+I had a project manager role in the following project types:
+European financial system consolidation process.
+Business intelligence systems.
+Document Management systems.
+Engineering data processing.
+Software as a service.
+Technologies
+I concentrate on Java related technologies. It is very important for me to keep up with recent developments in this very dynamic area. Programming is an area where there is always some food for intellectual curiosity. I believe that developers should always be curious to learn new things - it keeps you up-to-date, competitive and your mind that needs constant training is happy. 
+The changes in IT industry happen at amazing speed from procedural programming to object-oriented and now to somewhat service oriented.
+The applications become distributed by nature and development approaches that were used a few years ago are now obsolete (e.g. mainframes + Cobol -> Java + Struts + EJB -> Java + AJAX + (Web) Services ) I use in most of cases Java , JEE related technologies with a back end database development . A very important role I give to testing. I consider it a delivery proof for functional and non-functional requirements.
+
+Java
+Java is my main programming language. It is not the only one as I also program in C++, C#, PHP, Python and Visual Basic. In fact it does not take that much to learn a new programming language if you know already a few. However, Java has an excellent and free tooling support: Eclipse, NetBeans etc., the biggest open source all purpose libraries and probably the widest use in the enterprise IT landscape. I think that most of the modern programming approaches have been so widely accepted due to Java - ORM with Hibernate, General J2EE framework with Spring, AOP with AspectJ etc.
+On the web interface level Java provides now comparable tools with ASP.Net (JSF, Java to AJAX GWT etc.) It is may be a little heavy for a web site like this but for enterprise applications it is still the best choice.
+The power comes with complexity - too many frameworks to choose from, a variety of possible solutions and system integration challenges may lead to heavy and not flexible applications. 
+
+When I develop in Java I always try to follow these principles:
+Multi tier loosely coupled application design
+All utility code is delegated to frameworks (e.g. Spring)
+Development of a functionality is supported by unit tests as a "prove of contract fulfillment"
+Take a "big picture" - how the application will integrate with other systems, how it will behave under error conditions, under heavy concurrent load, what are transactional requirements etc.
+
+J2EE(JEE)
+I usually build enterprise applications that require web interfaces, transactions, security, asynchronous processing etc.
+Some of the parts of JEE (J2EE) specifications were always good like JSP/servlets and others are getting better e.g. from widely criticized EJB 1.0-2.1 to EJB3. 
+Even in "legacy" EJB applications there is an opportunity to integrate Spring to get its dependency injection and configuration services. 
+Entity beans can be replaces by hibernate behind session EJBs to get hibernate ORM power and still enjoy transactional, security and remote services provided by EJB.
+On Java 5+ hibernate annotations can be used with EJB2.0 and still give you all the benefits of EJB3 persistence model. I have successfully integrated Spring into existing legacy EJB projects. Spring provides you almost all JEE services however, if it is used in JEE application server I think you should follow some guidelines:
+Use server transaction managers especially for distributed transactions.
+Prefer Message Driven Beans (MDB) to Spring Message-Driven POJOs as the application server may better optimize JMS resources and MDBs.
+Carefully consider the versions of your packages - you may encounter hard to resolve incompatibilities (e.g. once I upgraded from JBoss 4.0 to JBoss 4.2 and I have got problems with Hibernate Annotations versions etc.)
+For security, I use JAAS and Spring based ACEGI.
+
+Database development
+Almost all applications are usually using a relational database of some kind. There are easy to follow normalizations rules to design a relational database (usually up to the 3d normal form). While following these rules, other problems to solve start appearing:
+How to map business models to relational models.
+How to design for extensibility - e.g. when business model is changing is it possible to change a database structure with a minimal existing data migration/transformation process.
+How to optimize queries (e.g. putting indexes on tables increase "reads" but decreases "writes", some of tables should be "de-normalized" to enable fast "reads").
+Is it possible to use database vendor specific features (e.g. views) or not.
+How to migrate existing data (e.g. a big production database with strict SLA)
+How to organize OLTP - OLAP process if needed.
+I work with the following databases - MySQL 4.0, 5.0, DB2, MS SQL, Oracle. 
+I design data models, optimize performance, provide ETL and Java based data migration/transformation solutions.
+
+Testing
+Testing is important. During development, I always create unit tests. Testing a Java class is easy but some of classes require other objects or database in a given state. As always there is a lot of solutions for these problems Java Mock Objects, TestNG, DBUnit to name a few.
+When developing a web application with Spring it sometimes useful to have a dedicated Spring configurations file for unit testing without starting a web sever to get it.
+Functional testing of a web interface can be achieved by using HttpUnit, JUnit with HttpClient, direct recoding on the browser with TestGen4Web or Selenium . An interesting solution is BadBoy on top of easy functional testing it can import scripts to JMeter for load testing.
+I intensively use all these tools during my development.
+
+Case Studies
+I have selected some of the project where I was taking a leading architect and developer roles. These are Web documentation system, reporting in logistics, car dealer application and data consolidation. I have accomplished many more projects but I do not want to create a long list and these ones represent certain variety in development approaches. I still would like to point out that my first choice is always Java.
+All these projects have been successfully implemented and made it through to the production environment. Two of projects ( Document management, Reporting system ) are Java based and two other ( Car dealer application , Data consolidation ) are mostly Microsoft technologies. I am trying to use what it makes more sense in projects. For the data consolidation I was enjoying MS SQL Data Transformation Services (DTS) services for Extraction, Transformation and Loading (ETL) as it was the only one available at that time out of the box. For my private Internet project, I was using ASP.NET with Visual Studio as at that time (2003) it was probably the fastest way to create a rich web interface and .Net framework was providing all the necessary libraries I needed.
+
+Document management
+My role: I was an architect and lead developer for this project
+The business process: Car dealers are using on-line technical documentations of cars for their service needs. After logging in they are can reach relevant interactive documentation and other information depending on their access level. The documents come continuously from various sources all over the world. Some documents/information has to be delivered to dealers with a higher priority than others are. The documents should be accessible base on the context e.g. car/electrical system or as a flash message on a dealer screen after a log in. The statistical information of the application usage should be available to the European and country level headquarters.
+The implementation: J2EE - Web Sphere 5.1, DB2, Spring for web layer, custom made XSLT/XML content management, secure integration with content providers, Lucene search engine, document meta data indexing rules with Digester , integration with WebTrends
+
+Reporting system
+My role: I was an architect, lead developer and project manager for this project
+The business process: In an existing database, containing information about transportation operations Key Performance Indicators (KPIs) should be retrieved, computed and presented to customers. Each customer has a set of specific KPIs based on business roles (e.g. shipper, carrier etc). They expect to receive KPI reports on a regular basis. Every report type has a set of custom parameters. Each user may have her own set of reports that may be shared with other users. Users of mother companies may see/subscribed to shared reports of daughter companies. Due to a short deadline of the project a "pure" Java/database programming was perceived as "an only option" to deliver project on time.
+The implementation: J2EE - Orion server, MySQL 4.0, nightly data aggregation jobs, Spring - Hibernate in a business layer, Tapestry for web layer to select report types and create user reports with specific parameters, POI for creating excel reports. Excel reports templates with prepared VBA modules for graph generation are populated in Spring MVC and delivered to users via e-mail or web browser.
+
+Car dealer application
+The project is my own Internet application for small business customers. (autobel.net, autobel.com - all discontinued)
+My role: I was always interested in making an Internet project on my own so I did. It included some new activities for me outside programming like market research, competitive intelligence, sales and customer relationship process modelling and web marketing. I used the following development tools: Visual Studio.Net C# , eXelon Stylus Studio for XML/XSLT, MS SQL 2000.
+The business process: Companies trading second hand cars can get their own web site and second hand cars promotions on Internet via search engines, directories and ads web sites. Client web sites are created directly If potential clients are contacted by sales managers and in case of interest sales managers create web sites for them via simple interfaces. A client web site consists of a car catalogue, contact information, e-mail communication. Sales managers via their accounts can change client settings and service level. Clients can upload car information, view site statistics and communicate with a responsible sales manager via their accounts. Client car catalogues are optimized and submitted periodically to search engines and other sites with second hand car listings. The submission reports are sent to customers on a regular basis.
+The implementation: Visual Studio C# ASP.NET project with SQL Server 2000 database. Web interfaces using ASPX pages with Web Customer and Web User Controls. XML for client configuration and some data storage. XSLT for static page creation and some parts of presentation tier. MS SQL 2000 server for the Business Intelligence and some general client information.
+
+Data consolidaiton
+My role: I was approached to make data consolidation, as other potential contractors did not agree to a strict schedule that was communicated by the upper management of the company. I made a project plan and created a data model for consolidation. First, I implemented a prototype in MS Access 2000 and then moved it to MS SQL Server 2000 with two reporting system: one in intranet ASP 3.0 and another on Cognos. I worked with regional IT managers for data extraction and consolidation and implemented data consistency/integrity verification process when it became clear that some raw data cleansing had to be done to improve the data quality.
+The business process: The central financial office located in Brussels needed consolidated sales and other financial data on a monthly basis from European divisions that were using separate Online Transaction Processing Systems (OLTP) - two Movex and one SAP system (all on its own DB2 database). The raw data had to be collected, consolidated and various reports had to be produced.
+The implementation: The data model was defined and communicated to the divisions so they could extract required data sets. The data sets were consolidated on SQL 2000 server by Data Transformation Services (DTS) packages implemented in VB Script. During the consolidation process a data cleansing and error reports were produced and sent back to responsible IT managers for corrections. Reporting system was developed in Visual Studio 6.0 ASP (VB Script) with Internet Explorer XML/XSLT transformations with XML data delivered directly from MS SQL 2000. The consolidated data sets were also used for Cognos reports.
+
+Clients
+During my carrier, I provided application development services to the companies below. Most of the projects were Java (JEE) based. However, I was also making applications in C#.Net, VB.Net, C++ and Visual Basic for some of them.
+
+
